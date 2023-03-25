@@ -1,0 +1,497 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+}
+
+html, body {
+  width: 100vw;
+  min-height:100vh;
+
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: "Helvetica Neue", 'Jost', 'Raleway', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  padding-bottom: 40%;
+}
+
+a {
+  transition: color 0.25s;
+  transition-timing-function: ease-in-out;
+  text-decoration: none;
+}
+a:hover {}
+
+img {border: 0;}
+
+li {list-style: none;}
+
+.bold {font-style: bold;}
+
+.blue {color: gray;}
+.blue:hover {color: #007AFF;}
+
+.inline {display: inline;}
+
+.italic {font-style: italic;}
+
+body > div.nav {
+  width: 100%;
+  margin: 0 auto;
+  height: 60px;
+  position: absolute;
+  top: 0px; left: 0px;
+  background-color: #303030;  /* #303030 #002246 */
+
+  display: flex;
+  justify-content: center;
+}
+
+body > div.nav > ul {
+  overflow: hidden;
+  position: absolute;
+  top: 15px;
+
+  margin: 0 auto;
+}
+
+body > div.nav > ul > li {
+  float: left;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+body > div.nav > ul > li > a{
+  text-align: center;
+  color: #b5bcc8;  /* #ababab */
+  font-size: 18px;
+}
+
+body > div.nav > ul > li > a:hover {
+  color: white;
+}
+body > div.nav > ul > li > a:active {
+  color: white;
+}
+
+body > div.nav > #home {
+  position:
+}
+
+.underline {
+  border-bottom: 1px solid #e0e0e0;
+  height: 40px;
+}
+
+/* bible verse */
+.bible_verse {
+  width: 960px; /*1080px*/
+  margin: 0 auto;
+  font-family: "Times New Roman", 'Cardo', 'Noto Serif', serif;
+}
+
+.bible_verse > h1 {
+  position: relative;
+  top: 70px;
+
+  text-align: left;
+  font-size: 16px;
+  /*font-style: italic;*/
+}
+
+.bible_verse > h1::first-letter {
+  font-size: 28px;
+}
+
+.bible_verse > h2 {
+  position: relative;
+  top: 80px;
+  text-align: right;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.bible_verse > #horizontalLine {
+  width: 960px; /* 1080px; */
+  margin: 0 auto;
+
+  position: relative;
+  top: 90px;
+
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Introduction */
+.introduction {
+  width: 960px; /* 1080px; */
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  top: 110px;
+
+}
+
+#picture {
+  float: left;
+  width: 225px;
+  height: 225px;
+}
+
+#picture img {
+  position: absolute;
+  left: 0;
+
+  max-width: 100%;
+  max-height: 100%;
+
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* body > div.introduction > #picture:hover {
+  float: left;
+  width: 250px;
+  height: 250px;
+  content: url("image/GyunginShin.png");
+} */
+
+.top-image:hover {
+  opacity:0;
+}
+
+#brief_introduction {
+  position: relative;
+  left: 5%;
+  margin-top: 2.75%;
+}
+/* #brief_introduction p {font-size: 14px;}
+#brief_introduction a {font-size: 14px;}
+#brief_introduction span {font-size: 14px;} */
+
+#email {
+  padding-top: 10px;
+  overflow: hidden;
+}
+
+#email_logo {float: left;}
+
+#email_address > a {
+  position: absolute;
+  font-size: 16px;
+  left: 250px;
+  color: gray;
+}
+
+#email_address > a:hover {color:#007AFF;}
+
+#religion {overflow: hidden;}
+
+#cross_logo {float: left;}
+
+#methodist > a {
+  position: absolute;
+  font-size: 16px;
+  left: 250px;
+  color: gray;
+}
+#methodist > a:hover {color: #007AFF;}
+
+#links > ul {overflow: hidden;}
+
+#links > ul > li {
+  padding-left: 10px;
+  padding-right: 10px;
+  float: left;
+}
+
+#links > ul > li > a {
+  font-size: 16px;
+  color: gray;
+}
+
+#links > ul > li > a:hover {color: #007AFF;}
+
+#GitHub{border-right: 2px solid gray;}
+
+#Google_Scholar{border-right: 2px solid gray;}
+
+/* #ORCID{border-right: 2px solid gray;} */
+
+#logos_A {
+  position: absolute;
+  left: 228px;
+  top: 160px;
+}
+
+#logos_B {
+  position: absolute;
+  left: 228px;
+  top: 205px;
+}
+
+.logo_container {
+  white-space: nowrap;
+  text-align: center;
+}
+
+.logo_container > li {display: inline;}
+
+#self-introduction {
+  position: relative;
+  width: 960px; /*1080px;*/
+  margin: 0 auto;
+  top: 140px;
+  left: 0px;
+  background-color: #f4f4f5; /*f3f1ed*/
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+}
+
+#self-introduction > p {
+  color: black;
+}
+
+/* news */
+.news-date {
+  display: block;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: normal;
+  padding: 7px;
+
+  text-align: center;
+  background-color: white;
+  width: 72px;
+  height: 12px;
+  line-height: 12px;
+
+  margin-top: 2px;
+  margin-left: 2px;
+}
+
+.news-date-wrapper {
+  background: lightgray; /*linear-gradient(to right bottom, red,orange,yellow,green,blue,indigo,violet);*/
+  height: 30px;
+  width: 90px;
+  border-radius: 5px; /*7px; */
+  text-align: center;
+}
+
+.news-date-contents {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+
+  font-size: 16px;
+}
+
+#news {
+  position: relative;
+  width: 960px; /*1080px;*/
+  margin: 0 auto;
+
+  top: 160px;
+  left: 0px;
+}
+
+#news li {
+  margin-bottom: 4px;
+}
+
+/* research */
+#research {
+  position: relative;
+  width: 960px; /*1080px;*/
+  margin: 0 auto;
+
+  top: 160px;
+  left: 0px;
+}
+
+.research-item{
+  width:100%;
+}
+
+.research-item > div {
+  float: left;
+  margin-bottom: 30px;
+  font-family: "Helvetica Neue"
+}
+
+.research-item-image {
+  padding:8px;
+  border-radius: 3px 3px 3px 3px;
+  border: 1px solid #e0e0e0;
+
+  transition: border 0.25s;
+  transition-timing-function: ease-in-out;
+
+  width: 320px;
+  height: 200px;
+
+  position: relative;
+}
+
+.research-item-image:hover {
+  border-radius: 3px 3px 3px 3px;
+  border: 1px solid #007AFF;
+}
+
+.research-item-image img {
+  display: block;
+
+  position: absolute;
+  max-height: 100%;
+  max-width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right:0;
+  margin:auto;
+}
+
+.research-item-text {
+  padding-top: 5px;
+  margin-left: 40px;
+  width: 50%;
+}
+
+.research-item-text * {font-size: 14px;}
+
+.abstract {display: none;}
+.abstract_show {
+  display: block;
+  overflow: scroll;
+
+  width: 100%;
+  max-height: 60px;
+
+  margin-top:15px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  padding: 10px;
+
+  background: #26393c;
+  color: #e5e3c8;
+  font-size: 12px;
+}
+
+.button {
+  display: inline-block;
+  font-size: 14px;
+  background-color:#0071e4;
+  color:white;
+  border-radius: 8px;
+  padding-left: 7px;
+  padding-right:7px;
+  height: 30px;
+  line-height: 30px;
+  text-align:center;
+}
+.button:hover {
+  background-color:#1d7bed;
+  color:white;
+}
+
+.bibtex {
+  display: none;
+
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.bibtexDisplay {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  background-color: #f5f5f7;
+
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+.bibtexDisplay > p {
+  font-size: 14px;
+  font-family: Consolas, monaco, monospace;
+  line-height: 1.7;
+  transition: all 0.3s ease-in-out;
+}
+
+/* about me */
+#about-me {
+  position: relative;
+  width: 960px; /*1080px;*/
+  margin: 0 auto;
+
+  top: 160px;
+  left: 0px;
+}
+
+#about-me li {
+  margin-bottom: 4px;
+}
+
+/* footer */
+.footer {
+  position: absolute;
+
+  width: 100%;
+  height: 60px;
+
+  bottom: 0;
+  background-color: #f5f5f7;
+  text-align: center;
+}
+
+.footer > .vertical_center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+/* deprecated
+#explanation {
+  position: relative;
+  width: 960px;
+  margin: auto;
+  height: 55px;
+  top: 70px;
+
+  color:black;
+
+  line-height: 55px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+#activities {
+  position: relative;
+  width: 1080px;
+  margin: 0 auto;
+
+  top: 160px;
+  left: 0px;
+}
+
+#activities li {
+  margin-bottom: 4px;
+} */

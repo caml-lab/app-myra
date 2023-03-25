@@ -1,0 +1,10 @@
+numpy
+tqdm
+arxiv
+rank_bm25
+openai
+tiktoken
+streamlit
+PyYaml
+streamlit_chat
+python-dotenv
