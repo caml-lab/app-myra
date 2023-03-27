@@ -286,10 +286,9 @@ if __name__ == '__main__':
                 # store the summaries and scores with the existing paper info
                 for i in range(len(selected_paper_info)):
                     selected_paper_info[i]['summary'] = summaries[i]
-                    # selected_paper_info[i]['score'] = scores[i]
                     selected_paper_info[i].pop("abstract")  # replace the abstract with the summary
 
-                json_string = json.dumps(selected_paper_info)
+                json_string = json.dumps(selected_paper_info, indent=4)
 
                 st.session_state["json_string"] = json_string
                 st.json(json_string, expanded=False)
